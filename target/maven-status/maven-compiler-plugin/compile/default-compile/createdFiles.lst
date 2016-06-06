@@ -1,0 +1,10 @@
+com\inventory\InventoryAppApplication.class
+com\inventory\dao\InventoryRepository.class
+com\inventory\kafka\config\TopicCreator.class
+com\inventory\model\Inventory.class
+com\inventory\dao\InventoryRepositoryCustom.class
+com\inventory\kafka\producer\KafkaUpdatePriceProducer.class
+com\inventory\kafka\producer\UpdatePriceProducer.class
+com\inventory\kafka\config\KafkaConfig.class
+com\inventory\controller\InventoryController.class
+com\inventory\dao\InventoryRepositoryImpl.class
