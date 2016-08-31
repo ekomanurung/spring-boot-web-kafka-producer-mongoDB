@@ -6,4 +6,4 @@ before_install:
   - chmod +x mvnw
 install:
   - mvn -N io.takari:maven:wrapper
-  - mvn clean install -DskipTests
+  - mvn clean install -U
