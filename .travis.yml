@@ -1,4 +1,5 @@
 language: java
 java:
 - 1.8
+- 5.4
 - jvm
