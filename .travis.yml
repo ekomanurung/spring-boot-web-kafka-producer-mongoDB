@@ -2,4 +2,5 @@ language: java
 jdk:
 - oraclejdk7
 
-script: mvn clean install -U
+before_install:
+  - chmod +x mvnw
