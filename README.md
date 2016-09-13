@@ -31,3 +31,7 @@ Simple Inventory CRUD Application using spring-boot and kafka
       behaviour is when you update the price with new_price is bigger than old
       (price discount) price, then the application will automatically publish
       event to Kafka broker.
+
+- running application using swagger UI
+    - open in browser http://localhost:8080/swagger-ui.html
+    - now you can use apps using swagger

@@ -6,5 +6,6 @@ com\inventory\dao\InventoryRepositoryCustom.class
 com\inventory\kafka\producer\KafkaUpdatePriceProducer.class
 com\inventory\kafka\producer\UpdatePriceProducer.class
 com\inventory\kafka\config\KafkaConfig.class
+com\inventory\controller\InventoryRestController.class
 com\inventory\controller\InventoryController.class
 com\inventory\dao\InventoryRepositoryImpl.class
