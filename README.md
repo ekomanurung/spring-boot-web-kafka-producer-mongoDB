@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ekomanroe/spring-boot-web-kafka-producer-mongoDB.svg?branch=master)](https://travis-ci.org/ekomanroe/spring-boot-web-kafka-producer-mongoDB)
+
 # spring-boot-web-kafka-producer
 Simple Inventory CRUD Application using spring-boot and kafka
 
