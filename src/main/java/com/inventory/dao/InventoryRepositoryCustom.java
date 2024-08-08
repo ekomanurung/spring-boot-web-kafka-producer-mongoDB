@@ -5,7 +5,7 @@ package com.inventory.dao;
  */
 public interface InventoryRepositoryCustom {
 
-    public int updateStockProduct(String id, int stock);
+    long updateStockProduct(String id, int stock);
 
-    public int updatePriceProduct(String id, double price);
+    long updatePriceProduct(String id, double price);
 }

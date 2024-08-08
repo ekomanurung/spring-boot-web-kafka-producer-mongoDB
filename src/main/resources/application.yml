@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: kafka:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/inventory_db
+
+springdoc:
+    api-docs:
+      path: /api-docs

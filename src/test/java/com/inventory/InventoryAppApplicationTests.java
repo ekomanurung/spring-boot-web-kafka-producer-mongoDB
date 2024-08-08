@@ -1,18 +1,17 @@
 package com.inventory;
 
-import org.junit.Ignore;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+
+@Disabled
 @SpringBootTest(classes = InventoryAppApplication.class)
 public class InventoryAppApplicationTests {
 
-  @Ignore
-  @Test
-  public void contextLoads() {
+    @Disabled
+    @Test
+    public void contextLoads() {
 
-  }
+    }
 }
