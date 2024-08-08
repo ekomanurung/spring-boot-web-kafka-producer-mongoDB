@@ -1,4 +1,4 @@
-(https://github.com/ekomanurung/spring-boot-web-kafka-producer-mongoDB/actions/workflows/mvn-build.yml/badge.svg)
+[![Build Status](https://github.com/ekomanurung/spring-boot-web-kafka-producer-mongoDB/actions/workflows/mvn-build.yml/badge.svg)]
 
 # spring-boot-web-kafka-producer
 Simple Inventory CRUD Application using spring-boot and kafka
