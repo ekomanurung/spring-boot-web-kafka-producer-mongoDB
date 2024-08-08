@@ -1,13 +1,28 @@
 spring:
   kafka:
     producer:
-      bootstrap-servers: kafka:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    bootstrap-servers: kafka:9092
   data:
     mongodb:
-      uri: mongodb://mongo:27017/inventory_db
+      username: user
+      password: user
+      host: mongo
+      port: 27017
+      database: inventory_db
 
 springdoc:
-    api-docs:
-      path: /api-docs
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com:
+      inventory:
+    org:
+      apache:
+        kafka: warn
+    root: info
