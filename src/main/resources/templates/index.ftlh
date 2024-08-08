@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <title>Simple Inventory System</title>
-    <link rel='stylesheet' href='/webjars/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/webjars/bootstrap/4.1.2/css/bootstrap.min.css'>
 </head>
 <body>
 <h2>Data Product List</h2>
@@ -22,8 +22,8 @@
         <td>${inventory.productName}</td>
         <td>${inventory.stock}</td>
         <td>${inventory.price}</td>
-        <td><a href="editStock/${inventory.id}"><button type="button">update stock</button></a></td>
-        <td><a href="editPrice/${inventory.id}"><button type="button">update price</button></a></td>
+        <td><a href="stocks/edit/${inventory.id}"><button type="button">update stock</button></a></td>
+        <td><a href="prices/edit/${inventory.id}"><button type="button">update price</button></a></td>
         <td><a href="delete/${inventory.id}"><button type="button">delete</button></a></td>
     </tr>
     </#list>

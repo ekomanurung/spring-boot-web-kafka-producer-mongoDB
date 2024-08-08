@@ -11,6 +11,12 @@ services:
     ports:
       - "27017:27017"
     restart: always
+    environment:
+      MONGODB_USERNAME: user
+      MONGODB_PASSWORD: user
+      MONGO_INITDB_DATABASE: inventory_db
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
   zookeeper:
     image: confluentinc/cp-zookeeper:7.4.4
     environment:
