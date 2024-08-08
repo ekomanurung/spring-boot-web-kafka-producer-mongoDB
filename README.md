@@ -5,11 +5,13 @@ Simple Inventory CRUD Application using spring-boot and kafka
 
 ## Prerequisites
 - Docker installed on local machine
-- Java 17
+- Java 21
+  - already compatible with Java 17++ (tested on Java 17) 
   - for running springboot 3
 - Maven
 
 ## How to run
+- ensure you already run maven build using `mvn clean install` or `mvn clean package`
 - run make `run-app` to start the application
 - run make `stop-app` to stop the application
 
