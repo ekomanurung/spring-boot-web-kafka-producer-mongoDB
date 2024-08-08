@@ -3,37 +3,23 @@
 # spring-boot-web-kafka-producer
 Simple Inventory CRUD Application using spring-boot and kafka
 
-- this project required:
-    - apache maven
-    - IDE
-    - mongodb installed in PC
+## Prerequisites
+- Docker installed on local machine
+- Java 17
+  - for running springboot 3
+- Maven
 
-- run mongodb:
-    - open run (`window + r`)
-    - type `mongod --dbpath C:\data`
+## How to run
+- run make `run-app` to start the application
+- run make `stop-app` to stop the application
 
-- run zookeper: `zkserver` in command prompt or terminal
+## Using the application
+- open in browser http://localhost:8080
+- use `Add` to add new inventory
+- to see the data sent to kafka, click updatePrice button
+- update price with new price less than old price
+- logs will appear in the console
 
-- run kafka: `.\bin\windows\kafka-server-start.bat .\config\server.properties`
-
-- show producer and consumer in directory windows in kafka\bin directory:
-  - producer:
-      `kafka-console-producer.bat --broker-list localhost:9092 --topic [topic-name]`
-  - consumer:
-      `kafka-console-consumer.bat --zookeeper localhost:2181 --topic [topic-name]`
-
-- running application
-    - make sure zookeeper, kafka, mongodb is running
-    - `go to project directory in command prompt / terminal`
-    - `mvn spring-boot:run`
-    - `open localhost:8080` in browser
-
-    - Application behaviour:
-      There is updatePrice Button to update the price of some inventory. the
-      behaviour is when you update the price with new_price is bigger than old
-      (price discount) price, then the application will automatically publish
-      event to Kafka broker.
-
-- running application using swagger UI
-    - open in browser http://localhost:8080/swagger-ui.html
-    - now you can use apps using swagger
+## Open Swagger
+- open in browser http://localhost:8080/swagger-ui/index.html
+- now you can use apps using swagger
